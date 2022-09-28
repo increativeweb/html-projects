@@ -1,0 +1,100 @@
+<svg width="613" height="536" viewBox="0 0 613 536" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+.zoom{animation:zoom 2s infinite;-webkit-animation:zoom 2s infinite;-moz-animation:zoom 2s infinite;-o-animation:zoom 2s infinite;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center;transform-box:fill-box}-webkit-keyframes zoom{0%{-webkit-transform:scale(1)}50%{-webkit-transform:scale(1.2)}100%{-webkit-transform:scale(1)}}@-webkit-keyframes zoom{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.2);transform:scale(1.2)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes zoom{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.2);transform:scale(1.2)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+.vector-1{-webkit-animation:vector_1 5s infinite linear;animation:vector_1 5s infinite linear;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center;transform-box:fill-box}@-webkit-keyframes vector_1{25%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}50%{-webkit-transform:translate(-10px,20px);transform:translate(-10px,20px)}75%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}@keyframes vector_1{25%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}50%{-webkit-transform:translate(-10px,20px);transform:translate(-10px,20px)}75%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}.vector-2{-webkit-animation:vector_2 5s infinite linear;animation:vector_2 5s infinite linear;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center;transform-box:fill-box}@-webkit-keyframes vector_2{25%{-webkit-transform:translate(-5px,-10px);transform:translate(-5px,-10px)}50%{-webkit-transform:translate(-10px,-20px);transform:translate(-10px,-20px)}75%{-webkit-transform:translate(-5px,-10px);transform:translate(-5px,-10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}@keyframes vector_2{25%{-webkit-transform:translate(-5px,-10px);transform:translate(-5px,-10px)}50%{-webkit-transform:translate(-10px,-20px);transform:translate(-10px,-20px)}75%{-webkit-transform:translate(-5px,-10px);transform:translate(-5px,-10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}.vector-3{-webkit-animation:vector_3 5s infinite linear;animation:vector_3 5s infinite linear;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center;transform-box:fill-box}@-webkit-keyframes vector_3{25%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}50%{-webkit-transform:translate(-10px,20px);transform:translate(-10px,20px)}75%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}@keyframes vector_3{25%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}50%{-webkit-transform:translate(-10px,20px);transform:translate(-10px,20px)}75%{-webkit-transform:translate(-5px,10px);transform:translate(-5px,10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}.vector-4{-webkit-animation:vector_4 5s infinite linear;animation:vector_4 5s infinite linear;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center;transform-box:fill-box}@-webkit-keyframes vector_4{25%{-webkit-transform:translate(5px,-10px);transform:translate(5px,-10px)}50%{-webkit-transform:translate(10px,-20px);transform:translate(10px,-20px)}75%{-webkit-transform:translate(5px,-10px);transform:translate(5px,-10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}@keyframes vector_4{25%{-webkit-transform:translate(5px,-10px);transform:translate(5px,-10px)}50%{-webkit-transform:translate(10px,-20px);transform:translate(10px,-20px)}75%{-webkit-transform:translate(5px,-10px);transform:translate(5px,-10px)}100%{-webkit-transform:translate(0,0);transform:translate(0,0)}}
+</style>
+<g>
+    <circle cx="36" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="181" r="2" fill="#7ABADD"/>
+    <circle cx="36" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="201" r="2" fill="#7ABADD"/>
+    <circle cx="36" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="221" r="2" fill="#7ABADD"/>
+    <circle cx="36" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="241" r="2" fill="#7ABADD"/>
+    <circle cx="36" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="261" r="2" fill="#7ABADD"/>
+    <circle cx="36" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="281" r="2" fill="#7ABADD"/>
+    <circle cx="36" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="301" r="2" fill="#7ABADD"/>
+    <circle cx="36" cy="321" r="2" fill="#7ABADD"/>
+    <circle cx="56" cy="321" r="2" fill="#7ABADD"/>
+    <circle cx="76" cy="321" r="2" fill="#7ABADD"/>
+    <circle cx="96" cy="321" r="2" fill="#7ABADD"/>
+    <circle cx="116" cy="321" r="2" fill="#7ABADD"/>
+    <circle cx="136" cy="321" r="2" fill="#7ABADD"/>
+    <circle cx="156" cy="321" r="2" fill="#7ABADD"/>
+    <circle cx="176" cy="321" r="2" fill="#7ABADD"/>
+</g>
+<g>
+    <g class="zoom">
+        <rect x="529.431" y="404.431" width="96" height="96" rx="16" transform="rotate(30 529.431 404.431)" fill="white" fill-opacity="0.2" stroke="url(#paint0_linear_47_202)"/>
+        <rect x="533.823" y="420.823" width="72" height="72" rx="16" transform="rotate(30 533.823 420.823)" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M538.346 484.083C538.458 484.258 538.612 484.404 538.791 484.506C538.971 484.608 539.174 484.666 539.384 484.674L546.123 484.895C548.033 484.959 549.679 484.749 551.156 484.251C554.371 483.163 557.057 480.956 558.716 478.04L564.189 468.419C564.82 467.312 564.664 465.908 563.798 464.931L556.074 456.186C555.61 455.657 554.975 455.296 554.293 455.17L542.827 452.989C541.545 452.745 540.26 453.327 539.628 454.435L534.159 464.048C532.498 466.969 531.974 470.407 532.684 473.731C533.008 475.25 533.667 476.774 534.701 478.392L538.346 484.083ZM543.487 472.03C543.582 472.361 543.803 472.624 544.083 472.782C544.363 472.942 544.701 472.998 545.034 472.911L553.865 470.611C554.529 470.438 554.912 469.765 554.723 469.106C554.532 468.447 553.84 468.051 553.176 468.224L545.547 470.21L544.661 467.147C544.47 466.488 543.779 466.094 543.114 466.267C542.45 466.44 542.067 467.113 542.258 467.773L543.487 472.03Z" fill="#583FBC"/>
+    </g>
+</g>
+<g class="vector-2">
+    <circle cx="492" cy="51" r="8" fill="#7B55EC"/>
+</g>
+<g class="vector-1">
+    <circle cx="569" cy="279" r="13" fill="#7ABADD"/>
+</g>
+<g class="vector-4">
+    <circle cx="31" cy="392" r="6" fill="#583FBC"/>
+</g>
+<g>
+    <g class="zoom">
+        <rect x="0.823242" y="36.823" width="72" height="72" rx="16" transform="rotate(-30 0.823242 36.823)" fill="#583FBC"/>
+        <path d="M53.7684 31.9769C50.0909 31.1663 47.3678 32.7425 45.6161 34.4122C43.8709 36.0755 41.7418 37.3047 39.4287 37.9844C37.1069 38.6666 34.3803 40.2368 33.2434 43.827C31.0893 50.6296 39.0594 55.958 40.9047 56.603C42.75 57.2481 43.7731 58.9379 46.5733 61.9774C49.3735 65.017 52.2844 67.7549 53.9919 66.1039C55.6994 64.453 54.835 61.7213 53.4617 58.1905C53.3673 57.9477 53.2822 57.7179 53.2056 57.4999C52.6808 56.0053 54.5964 54.8993 55.6284 56.1012C55.7787 56.2763 55.9355 56.4649 56.0986 56.6681C58.4696 59.6229 60.4031 61.7373 62.6867 61.084C64.9702 60.4308 64.0546 56.5409 62.8223 52.596C61.5901 48.6512 60.6382 46.9203 61.0022 44.9997C61.3663 43.0791 60.7368 33.5126 53.7684 31.9769ZM40.7721 41.64C40.9534 42.0816 40.7434 42.5866 40.3031 42.7696C40.146 42.836 36.6857 44.355 37.8221 48.434C37.9304 48.8229 37.7555 49.2238 37.4213 49.4168C37.3593 49.4526 37.292 49.4812 37.2199 49.5012C36.759 49.6297 36.2812 49.3601 36.1528 48.8992C34.9075 44.4296 37.8903 41.8881 39.6412 41.168C40.0838 40.9861 40.59 41.1974 40.7721 41.64Z" fill="white"/>
+    </g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_47_202" x1="529.431" y1="404.431" x2="625.431" y2="500.431" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

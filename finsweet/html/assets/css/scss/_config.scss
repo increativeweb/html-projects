@@ -1,0 +1,263 @@
+@import url('//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+$bodyfont		: 'Poppins', sans-serif;
+$bodyfontsize	: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 320)));
+$bodycolor		:#000000;
+
+$white		:#ffffff;
+$black		:#000000;
+$darkblack  :#282938;
+$lightwhite :#BBBBCB;
+
+$gray		:#F4F6FC;
+$skyblue    :#EEF4FA;
+$darkblue   :#1C1E53;
+$blue	    :#2405F2;
+$lightyellow:#FCD980;
+
+/* Mixins */
+@mixin appearance($value) {
+    -webkit-appearance: $value; 
+    -moz-appearance: $value; 
+    appearance: $value;
+}
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+@mixin box-shadow ($box-shadow){
+    -moz-box-shadow:$box-shadow;
+    -webkit-box-shadow:$box-shadow;
+    box-shadow:$box-shadow;
+}
+@mixin box-shadow-all ($bs-t, $bs-r, $bs-b, $bs-l, $box-shadow-all-color){
+    box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+    -webkit-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+    -moz-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+    -o-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+}
+@mixin box-shadow-value ($bs-t, $bs-r, $bs-b){
+    box-shadow: $bs-t, $bs-r, $bs-b;
+    -webkit-box-shadow: $bs-t, $bs-r, $bs-b;
+    -moz-box-shadow: $bs-t, $bs-r, $bs-b;
+    -o-box-shadow: $bs-t, $bs-r, $bs-b;
+}
+@mixin transition($duration, $ease) {
+    -webkit-transition: all $duration $ease;
+    -moz-transition: all $duration $ease;
+    -o-transition: all $duration $ease;
+    transition: all $duration $ease;
+}
+@mixin transition-all($all, $visibility, $z-index) {
+    -webkit-transition: $all $visibility $z-index;
+    -moz-transition: $all $visibility $z-index;
+    -o-transition: $all $visibility $z-index;
+    transition: $all $visibility $z-index;
+    -ms-transition: $all $visibility $z-index;
+}
+@mixin opacity($value) {
+    -moz-opacity: $value;
+    -khtml-opacity: $value;
+    -webkit-opacity: $value;
+    opacity: $value;
+}
+
+/* display: flex */
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin inline-flex {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+@mixin align-items($align) {
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-align-items: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+}
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+@mixin flex-wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+@mixin flex-flow($flow) {
+    -webkit-flex-flow: $flow;
+    -moz-flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    flex-flow: $flow;
+}
+// Display Order
+@mixin order($val) {
+    -webkit-box-ordinal-group: $val;  
+    -moz-box-ordinal-group: $val;     
+    -ms-flex-order: $val;     
+    -webkit-order: $val;  
+    order: $val;
+}
+
+@mixin transform($value) {
+    -moz-transform: $value;  
+    -webkit-transform: $value;  
+    -o-transform: $value;  
+    -ms-transform: $value; 
+    transform: $value;
+}
+
+
+/* common CSS - Start */
+h1, .h1 { 
+    font-size: calc(36px + (54 - 36) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
+}
+h2, .h2 { 
+    font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
+}
+h3, .h3 { 
+    font-size: calc(28px + (38 - 28) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
+}
+h4, .h4 { 
+    font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+h5, .h5 { 
+    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+h6, .h6 { 
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+
+p { 
+    color: rgba(40, 41, 56, 0.7);
+}
+
+.image {
+    display: flex; align-items: center; justify-content: center; height: 100%;
+}
+
+img {
+    max-width: 100%; height: auto;
+}
+
+.bg-gray {
+    background: $gray;
+}
+.bg-darkgray {
+    background: #F4F5F5;
+}
+.bg-lightgray {
+    background: rgba($gray, 0.5);
+}
+.bg-skyblue {
+    background: #EEF4FA;
+}
+
+.btn { 
+    @include box-shadow(none); font-weight: 500; font-size: 16px; text-align: center; height: 60px; padding: 0px 45px; @include border-radius(40px); @include transition(0.3s, ease-in-out); font-family: $bodyfont; line-height: 60px; border: 1px solid transparent;
+    &:focus { 
+        outline: none !important; @include box-shadow(none !important); 
+    }
+    &:hover { 
+        @include box-shadow(none); 
+    }
+    &.btn-primary {
+        color: #1B1C2A; border-color: $lightyellow; background: $lightyellow;
+        &:hover, &:focus, &:active {
+            color: #1B1C2A; background: #FDE4A6; border-color: #FDE4A6;
+        }
+    }
+    &.btn-secondry {
+        color: $white; border-color: #282938; background: #282938;
+        &:hover, &:focus, &:active {
+            color: $white; background: #535460; border-color: #535460;
+        }
+    }
+    &.btn-arrow {
+        color: $white; border: none; background: transparent; padding: 0; height: 40px; line-height: 40px;
+        &.arrow-white {
+            &::after {
+                content: ''; background: url(../images/arrow-white.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+            }
+        }
+        &.arrow-blue {
+            color: #2405F2;
+            &::after {
+                content: ''; background: url(../images/arrow-blue.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+            }
+        }
+        &.arrow-black {
+            color: #282938;
+            &::after {
+                content: ''; background: url(../images/arrow-black.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+            }
+        }
+        &.arrow-yellow {
+            color: #FCD980;
+            &::after {
+                content: ''; background: url(../images/arrow-lightyellow.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+            }
+        }
+        &:hover, &:focus, &:active {
+            color: $white; background: transparent; border: none;
+            &.arrow-blue {
+                color: #2405F2;
+            }
+            &.arrow-black {
+                color: #282938;
+            }
+            &.arrow-yellow {
+                color: #FCD980;
+            }
+            &::after {
+                @include transform(translateX(7px));
+            }
+        }
+    }
+    &.btn-outline-white {
+        color: $white; border-color: rgba(244, 246, 252, 0.2);
+        &:hover, &:focus, &:active {
+            color: $darkblue !important; background: $white; border-color: $white;
+        }
+    }
+    @media (max-width: 992px) { 
+        height: 54px; line-height: 54px; padding: 0px 35px; font-size: 15px;
+    } 
+    @media (max-width: 575px) { 
+        height: 48px; line-height: 48px; padding: 0px 25px; 
+    } 
+}
+
+.underline-link {
+    position: relative; 
+    &::after {
+        content: ''; height: 1px; width: 0px; background: #282938; position: absolute; bottom: 0px; left: 0; @include transition(0.3s, ease-in-out);
+    }
+    &:hover , &:focus {
+        &::after {
+            width: 100%; 
+        }
+    }
+}
+/* common CSS - End */
