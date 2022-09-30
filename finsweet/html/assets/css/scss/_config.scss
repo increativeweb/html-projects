@@ -131,16 +131,16 @@ $lightyellow:#FCD980;
 
 /* common CSS - Start */
 h1, .h1 { 
-    font-size: calc(36px + (54 - 36) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
+    font-size: calc(32px + (54 - 32) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
 }
 h2, .h2 { 
-    font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
+    font-size: calc(30px + (48 - 30) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
 }
 h3, .h3 { 
-    font-size: calc(28px + (38 - 28) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
+    font-size: calc(24px + (38 - 24) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; 
 }
 h4, .h4 { 
-    font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+    font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
 }
 h5, .h5 { 
     font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
@@ -162,7 +162,7 @@ img {
 }
 
 .bg-gray {
-    background: $gray;
+    background: $gray !important;
 }
 .bg-darkgray {
     background: #F4F5F5;
@@ -198,25 +198,25 @@ img {
         color: $white; border: none; background: transparent; padding: 0; height: 40px; line-height: 40px;
         &.arrow-white {
             &::after {
-                content: ''; background: url(../images/arrow-white.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+                content: ''; background: url(../images/icons/arrow-white.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
             }
         }
         &.arrow-blue {
             color: #2405F2;
             &::after {
-                content: ''; background: url(../images/arrow-blue.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+                content: ''; background: url(../images/icons/arrow-blue.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
             }
         }
         &.arrow-black {
             color: #282938;
             &::after {
-                content: ''; background: url(../images/arrow-black.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+                content: ''; background: url(../images/icons/arrow-black.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
             }
         }
         &.arrow-yellow {
             color: #FCD980;
             &::after {
-                content: ''; background: url(../images/arrow-lightyellow.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
+                content: ''; background: url(../images/icons/arrow-lightyellow.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
             }
         }
         &:hover, &:focus, &:active {
