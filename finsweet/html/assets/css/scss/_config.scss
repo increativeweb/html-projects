@@ -154,11 +154,11 @@ p {
 }
 
 .image {
-    display: flex; align-items: center; justify-content: center; height: 100%;
+    display: flex; align-items: center; justify-content: center; height: 100%; padding-top: 10px;
 }
 
-img {
-    max-width: 100%; height: auto;
+img, svg {
+    max-width: 100%; height: auto; 
 }
 
 .bg-gray {
@@ -173,14 +173,21 @@ img {
 .bg-skyblue {
     background: #EEF4FA;
 }
+.bg-lightyellow {
+    background: rgba(252, 217, 128, 0.1);
+}
 
 .btn { 
-    @include box-shadow(none); font-weight: 500; font-size: 16px; text-align: center; height: 60px; padding: 0px 45px; @include border-radius(40px); @include transition(0.3s, ease-in-out); font-family: $bodyfont; line-height: 60px; border: 1px solid transparent;
+    @include box-shadow(none); font-weight: 500; font-size: 18px; text-align: center; height: 60px; padding: 0px 45px; @include border-radius(40px); @include transition(0.3s, ease-in-out); font-family: $bodyfont; line-height: 60px; border: 1px solid transparent;
     &:focus { 
         outline: none !important; @include box-shadow(none !important); 
     }
     &:hover { 
         @include box-shadow(none); 
+    }
+    &:focus-visible {
+        outline: 3px solid $lightyellow !important;
+        @include border-radius(40px);
     }
     &.btn-primary {
         color: #1B1C2A; border-color: $lightyellow; background: $lightyellow;
@@ -196,6 +203,7 @@ img {
     }
     &.btn-arrow {
         color: $white; border: none; background: transparent; padding: 0; height: 40px; line-height: 40px;
+        
         &.arrow-white {
             &::after {
                 content: ''; background: url(../images/icons/arrow-white.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
@@ -219,21 +227,45 @@ img {
                 content: ''; background: url(../images/icons/arrow-lightyellow.svg) no-repeat center center; width: 25px; height: 12px; background-size: contain; display: inline-block; margin-left: 15px; @include transform(translateX(0px)); @include transition(0.3s, ease-in-out);
             }
         }
+        &.no-arrow {
+            &::after {  
+                content: none;
+            }
+        }
         &:hover, &:focus, &:active {
             color: $white; background: transparent; border: none;
             &.arrow-blue {
-                color: #2405F2;
+                color: #282938;
+                &::after {
+                    background: url(../images/icons/arrow-black.svg) no-repeat center center; 
+                }
             }
             &.arrow-black {
-                color: #282938;
+                color: #2405F2;
+                &::after {
+                    background: url(../images/icons/arrow-blue.svg) no-repeat center center;
+                }
             }
             &.arrow-yellow {
+                color: $white;
+                &::after {
+                    background: url(../images/icons/arrow-white.svg) no-repeat center center;
+                }
+            }
+            &.arrow-white {
                 color: #FCD980;
+                &::after {
+                    background: url(../images/icons/arrow-lightyellow.svg) no-repeat center center;
+                }
             }
             &::after {
                 @include transform(translateX(7px));
             }
         }
+    }    
+    &.blog-arrow {
+        color: #282938; border: none; background: transparent; padding: 0 35px 0 0; height: 40px; line-height: 40px;
+        background: url(../images/icons/arrow-black.svg) no-repeat center right; background-size: 25px; display: inline-block; @include transition(0.3s, ease-in-out);
     }
     &.btn-outline-white {
         color: $white; border-color: rgba(244, 246, 252, 0.2);
@@ -242,10 +274,10 @@ img {
         }
     }
     @media (max-width: 992px) { 
-        height: 54px; line-height: 54px; padding: 0px 35px; font-size: 15px;
+        height: 54px; line-height: 54px; padding: 0px 35px; font-size: 16px;
     } 
     @media (max-width: 575px) { 
-        height: 48px; line-height: 48px; padding: 0px 25px; 
+        height: 48px; line-height: 48px; padding: 0px 25px; font-size: 14px;
     } 
 }
 
