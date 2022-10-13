@@ -1,0 +1,263 @@
+@import url('//fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+/* Variables */
+$bodyfont		: 'Jost', sans-serif;
+$bodyfontsize	: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 320)));
+$bodycolor		:#FFFFFF;
+
+$white		:#ffffff;
+$black		:#000000;
+$darkblack  :#15131A;
+$lightwhite :rgba($white, 0.85);
+
+$pink		:#CB79B1;
+$gray		:#DEDDDF;;
+
+/* Mixins */
+@mixin appearance($value) {
+    -webkit-appearance: $value; 
+    -moz-appearance: $value; 
+    appearance: $value;
+}
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+@mixin box-shadow ($box-shadow){
+    -moz-box-shadow:$box-shadow;
+    -webkit-box-shadow:$box-shadow;
+    box-shadow:$box-shadow;
+}
+@mixin box-shadow-all ($bs-t, $bs-r, $bs-b, $bs-l, $box-shadow-all-color){
+    box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+    -webkit-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+    -moz-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+    -o-box-shadow: $bs-t $bs-r $bs-b $bs-l $box-shadow-all-color;
+}
+@mixin box-shadow-value ($bs-t, $bs-r, $bs-b){
+    box-shadow: $bs-t, $bs-r, $bs-b;
+    -webkit-box-shadow: $bs-t, $bs-r, $bs-b;
+    -moz-box-shadow: $bs-t, $bs-r, $bs-b;
+    -o-box-shadow: $bs-t, $bs-r, $bs-b;
+}
+@mixin transition($duration, $ease) {
+    -webkit-transition: all $duration $ease;
+    -moz-transition: all $duration $ease;
+    -o-transition: all $duration $ease;
+    transition: all $duration $ease;
+}
+@mixin transition-all($all, $visibility, $z-index) {
+    -webkit-transition: $all $visibility $z-index;
+    -moz-transition: $all $visibility $z-index;
+    -o-transition: $all $visibility $z-index;
+    transition: $all $visibility $z-index;
+    -ms-transition: $all $visibility $z-index;
+}
+@mixin opacity($value) {
+    -moz-opacity: $value;
+    -khtml-opacity: $value;
+    -webkit-opacity: $value;
+    opacity: $value;
+}
+
+/* display: flex */
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin inline-flex {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+@mixin align-items($align) {
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-align-items: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+}
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+@mixin flex-wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+@mixin flex-flow($flow) {
+    -webkit-flex-flow: $flow;
+    -moz-flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    flex-flow: $flow;
+}
+// Display Order
+@mixin order($val) {
+    -webkit-box-ordinal-group: $val;  
+    -moz-box-ordinal-group: $val;     
+    -ms-flex-order: $val;     
+    -webkit-order: $val;  
+    order: $val;
+}
+
+@mixin transform($value) {
+    -moz-transform: $value;  
+    -webkit-transform: $value;  
+    -o-transform: $value;  
+    -ms-transform: $value; 
+    transform: $value;
+}
+
+
+/* common CSS - Start */
+h1, .h1 { 
+    font-size: calc(36px + (74 - 36) * ((100vw - 320px) / (1900 - 320))); font-weight: 600; letter-spacing: -0.02em;
+}
+h2, .h2 { 
+    font-size: calc(24px + (40 - 24) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+h3, .h3 { 
+    font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+h4, .h4 { 
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+h5, .h5 { 
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+h6, .h6 { 
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 320))); font-weight: 500; 
+}
+
+p { 
+    color: rgba(#FFFFFF, 0.87); font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1900 - 320)));
+}
+
+.dark-bg {
+    background: #0B0B0D;
+}
+
+*:focus-visible {
+    outline: 3px solid $pink !important;
+}
+
+.image {
+    @include flexbox; @include align-items(center); @include justify-content(center); height: 100%; overflow: hidden;
+    &.with-info {
+        @include flex-direction(column);
+        .info { max-width: 430px; margin: 25px 0 0; width: 100%; 
+            div {
+                margin-bottom: 5px; color: rgba(255, 255, 255, 0.6); font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 320))); font-weight: 400;
+            }
+            span {
+                color: rgba(255, 255, 255, 0.85); font-weight: 400; font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1900 - 320)));
+            }
+        }
+        @media(max-width: 992px) {  
+            padding-top: 30px;
+        }
+    }
+}
+
+img, svg {
+    max-width: 100%; height: auto; 
+}
+
+a {
+    font-weight: 500; font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 320))); color: $white; text-decoration: none; position: relative; @include transition(0.3s, ease-in-out);
+    &::after {
+        content: ''; height: 2px; width: 0px; background: $white; position: absolute; bottom: 0px; left: 0; @include transition(0.3s, ease-in-out);
+    }
+    &.link-pink { 
+        color: $pink; font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1900 - 320)));
+        &::after {
+            background: $pink; 
+        }
+    }
+    &:hover , &:focus, &.current-menu-item {
+        color: $white; @include opacity(0.9);       
+        &::after {
+            width: 100%; 
+        }
+        &.link-pink { 
+            color: $pink;            
+        }
+    }
+}    
+
+.grid {
+    display: grid;
+    &.grid-2 {
+        grid-template-columns: repeat(2, 50%);
+        @media(max-width: 575px) { 
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+    &.grid-4 {
+        grid-template-columns: repeat(4, 25%);
+        @media(max-width: 992px) { 
+            grid-template-columns: repeat(3, 33.33%);
+        }
+        @media(max-width: 767px) { 
+            grid-template-columns: repeat(2, 50%);
+        }
+    }
+}
+
+.btn {
+    height: 58px; line-height: 58px; border: none; @include border-radius(40px); letter-spacing: -0.02em; font-weight: 500; font-size: 16px; min-width: 200px; padding: 0 40px; @include transition(0.3s, ease-in-out);
+    &.btn-gradient {
+        background-image: linear-gradient(104.12deg, #BE7CFF 8.14%, #F8766D 163.79%); background-position: left center; background-size: 130% auto; color: #FFFFFF; 
+        &:hover {
+            background-position: right center;
+        }
+    }
+    &:focus-visible {
+        @include border-radius(40px);
+    }
+    &::after {
+        content: none;
+    }
+    &:hover , &:focus {
+        @include opacity(1);
+    }
+}
+
+.form-group {
+    margin-bottom: 30px;
+    label {
+        color: rgba(#FFFFFF, 0.6); font-weight: 400; font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 320))); margin-bottom: 10px;
+    }
+    .form-control {
+        background: transparent; @include border-radius(0); border: none; border-bottom: 1px solid rgba(#FFFFFF, 0.2); padding: 0; color: rgba(#FFFFFF, 0.87); font-weight: 400; font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 320))); height: 50px;
+    }
+    textarea.form-control {
+        height: auto;
+    }
+    @media(max-width: 767px) { 
+        margin-bottom: 20px; 
+        label {
+            margin-bottom: 2px;
+        }
+        .form-control {
+            height: 40px;
+        }
+    }
+}
