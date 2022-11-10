@@ -95,22 +95,16 @@ function sendMailContact() {
             data: $('#mailForm').serialize(),
             type: "POST",
             dataType: 'json',
-            complete:function(){
-                jQuery('#send-btn').val('Send');
-            },
-            success:function(data) {
-                if(data.error){
-                    $(".g-recaptcha").after("<span class='error _recaptcha-error'>"+ data.error +"</span>");
-                }
+            success:function(data) {                
                 if(data.status == 'success'){
                     $('.w-form-done').slideDown();
                     setTimeout(function(){
-                    $('.w-form-done').slideUp();
-                    $('#mailForm').trigger("reset");
+                        $('.w-form-done').slideUp();
+                        $('#mailForm').trigger("reset");
                     }, 5000);
                 } else if(data.status == 'error') {
                     setTimeout(function(){
-                    $('.w-form-fail').slideDown();
+                        $('.w-form-fail').slideDown();
                     }, 5000);
                 }
             },
