@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>eDex</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="header-first-block"> <a class="header-logo" href="#"> <img src="assets/images/edex.svg" alt="eDex"> </a>
+                    <div class="menu-list">
+                        <ul id="menu-main-menu" class="mainMenu navbar-nav m-auto">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div class="action-btn d-block d-sm-none mt-3"> <a href="#" class="btn btn-lock"><em class="icons icon-lock"></em>Login</a> <a href="#" class="btn btn-primary btn-large">Sign up for Free</a> </div>
+                    </div>
+                    <div class="action-btn d-none d-sm-block"> <a href="#" class="btn btn-lock"><em class="icons icon-lock"></em>Login</a> <a href="#" class="btn btn-primary btn-large">Sign up for Free</a></div> <button class="sidebar-icon toggle-sidebar d-inline-block d-xl-none"> <span></span><span></span><span></span> </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content-wrapper">
+        <section class="main-section hero-banner-section bg-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="left-image-block col-12 col-md-7">
+                        <div class="title-block"> <span class="sub-title">START TO SUCCESS</span>
+                            <div class="main-heading">
+                                <h1>Access To <span class="text-line">5000+</span> Courses from <span class="text-line">300</span> Instructors & Institutions</h1>
+                            </div>
+                            <div class="info-content">Various versions have evolved over the years, sometimes by accident,</div>
+                        </div>
+                        <div class="action-block">
+                            <form> <input type="text" id="search" placeholder="What do want to learn?" class="form-control search-block"> </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 right-image-block">
+                        <div class="image-block"> <img src="assets/images/hero-image.png" alt="UI-UX Design">
+                            <div class="box"><img src="assets/images/rating.png" alt="Rating"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-slider-section main-section bg-green-color">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12 col-lg-2">
+                        <div class="title-block">
+                            <h2>Most <span class="text-line">Popular </span><span class="theme-color">Course</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-10">
+                        <div class="slider-block">
+                            <div id="firstslider" class="splide" aria-label="Basic Structure Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="image-block"> 
+                                                    <img src="assets/images/card-image-1.png" alt="HTML"> 
+                                                    <div class="category"> <a href="#">HTML</a> </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <a href ="#">Various versions have evolved....</a>
+                                                    </div>
+                                                    <div class="review-block">
+                                                        <img src="assets/images/review-star.png" alt="Rating Star"><span>(15)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer-block">
+                                                    <h4>$500</h4>
+                                                    <div class="btn-block">
+                                                        <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow"></em></a>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="image-block"> 
+                                                    <img src="assets/images/card-image-2.png" alt="Design"> 
+                                                    <div class="category"><a href="#">Design</a></div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <a href ="#">Various versions have evolved....</a>
+                                                    </div>
+                                                    <div class="review-block">
+                                                        <img src="assets/images/review-star.png" alt="Rating Star"><span>(20)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer-block">
+                                                    <h4>$500</h4>
+                                                    <div class="btn-block">
+                                                        <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow"></em></a>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="image-block"> 
+                                                    <img src="assets/images/card-image-3.png" alt="Business"> 
+                                                    <div class="category"> <a href="#">Business</a> </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <a href ="#">Various versions have evolved....</a>
+                                                    </div>
+                                                    <div class="review-block">
+                                                        <img src="assets/images/review-star.png" alt="Rating Star"><span>(102)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer-block">
+                                                    <h4>$500</h4>
+                                                    <div class="btn-block">
+                                                        <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow"></em></a>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="image-block"> 
+                                                    <img src="assets/images/card-image-4.png" alt="Social Media"> 
+                                                    <div class="category"> <a href="#">Social Media</a> </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <a href ="#">Various versions have evolved....</a>
+                                                    </div>
+                                                    <div class="review-block">
+                                                        <img src="assets/images/review-star.png" alt="Rating Star"><span>(20)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer-block">
+                                                    <h4>$500</h4>
+                                                    <div class="btn-block">
+                                                        <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow"></em></a>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="image-block"> 
+                                                    <img src="assets/images/card-image-1.png" alt="Design"> 
+                                                    <div class="category"> <a href="#">HTML</a> </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <a href ="#">Various versions have evolved....</a>
+                                                    </div>
+                                                    <div class="review-block">
+                                                        <img src="assets/images/review-star.png" alt="Rating Star"><span>(15)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer-block">
+                                                    <h4>$500</h4>
+                                                    <div class="btn-block">
+                                                        <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow"></em></a>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="image-block"> 
+                                                    <img src="assets/images/card-image-1.png" alt="Design"> 
+                                                    <div class="category"> <a href="#">HTML</a> </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <a href ="#">Various versions have evolved....</a>
+                                                    </div>
+                                                    <div class="review-block">
+                                                        <img src="assets/images/review-star.png" alt="Rating Star"><span>(15)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer-block">
+                                                    <h4>$500</h4>
+                                                    <div class="btn-block">
+                                                        <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow"></em></a>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        <section class="category-section main-section bg-pink-color">
+            <div class="container">
+                <div class="title-block">
+                    <h2>Most <span class="text-line">Popular </span><span class="theme-color">Categorys</span></h2>
+                    <div class="info-content">Various versions have evolved over the years, sometimes by accident,</div>
+                </div>
+                <div class="category-block">
+                    <div class="cards">
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/pennib.svg" alt="Design">
+                                </div>
+                                <div class="category-title">Design</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/filehtml.svg" alt="Development">
+                                </div>
+                                <div class="category-title">Development</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/microphonestage.svg" alt="Marketing">
+                                </div>
+                                <div class="category-title">Marketing</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/briefcase.svg" alt="Business">
+                                </div>
+                                <div class="category-title">Business</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/sunhorizon.svg" alt="Lifestyle">
+                                </div>
+                                <div class="category-title">Lifestyle</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/camera.svg" alt="Photography">
+                                </div>
+                                <div class="category-title">Photography</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/musicnote.svg" alt="Music">
+                                </div>
+                                <div class="category-title">Music</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/database.svg" alt="Data Science">
+                                </div>
+                                <div class="category-title">Data Science</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/lightbulb.svg" alt="Personal Develop">
+                                </div>
+                                <div class="category-title">Personal Develop</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/heartbeat.svg" alt="Helth & Fitness">
+                                </div>
+                                <div class="category-title">Helth & Fitness</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/graph.svg" alt="Finance">
+                                </div>
+                                <div class="category-title">Finance</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="category-card">
+                                <div class="icon-block">
+                                    <img src="assets/images/icon/detective.svg" alt="Teaching">
+                                </div>
+                                <div class="category-title">Teaching</div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn btn-small btn-primary-outline"><em class="icons icon-right-top-arrow-green"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-slider-section main-section bg-pink-color">
+            <div class="container">
+                <div class="title-block">
+                    <h2>Our Best <span class="text-line">Instructor</span></h2>
+                    <div class="info-content">Various versions have evolved over the years, sometimes by accident,</div>
+                </div>
+                <div class="slider-block">
+                    <div id="secondslider" class="splide" aria-label="Basic Structure Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <div class="image-block"> 
+                                            <img src="assets/images/team-1.png"> 
+                                        </div>
+                                        <div class="card-title text-center">
+                                            <div class="card-heading">Jacob Jones</div>
+                                            <div class="card-sub-heading">UI-UX Design Expart</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <div class="image-block"> 
+                                            <img src="assets/images/team-2.png"> 
+                                        </div>
+                                        <div class="card-title text-center">
+                                            <div class="card-heading">Jacob Jones</div>
+                                            <div class="card-sub-heading">Social Media Expart</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <div class="image-block"> 
+                                            <img src="assets/images/team-3.png"> 
+                                        </div>
+                                        <div class="card-title text-center">
+                                            <div class="card-heading">Jacob Jones</div>
+                                            <div class="card-sub-heading">Business Idea Expart</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <div class="image-block"> 
+                                            <img src="assets/images/team-4.png"> 
+                                        </div>
+                                        <div class="card-title text-center">
+                                            <div class="card-heading">Jacob Jones</div>
+                                            <div class="card-sub-heading">Photograpy Expart</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <div class="image-block"> 
+                                            <img src="assets/images/team-5.png"> 
+                                        </div>
+                                        <div class="card-title text-center">
+                                            <div class="card-heading">Jacob Jones</div>
+                                            <div class="card-sub-heading">Photograpy Expart</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <div class="image-block"> 
+                                            <img src="assets/images/team-1.png"> 
+                                        </div>
+                                        <div class="card-title text-center">
+                                            <div class="card-heading">Jacob Jones</div>
+                                            <div class="card-sub-heading">UI-UX Design Expart</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <div class="image-block"> 
+                                            <img src="assets/images/team-2.png"> 
+                                        </div>
+                                        <div class="card-title text-center">
+                                            <div class="card-heading">Jacob Jones</div>
+                                            <div class="card-sub-heading">UI-UX Design Expart</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section card-section">
+            <div class="container">
+                <div class="title-block">
+                    <h2>Our <span class="text-line">Achievement</span></h2>
+                    <div class="info-content">Various versions have evolved over the years, sometimes by accident,</div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="row align-items-center g-md-5 g-3">
+                            <div class="col-sm-6 col-12">
+                                <div class="counter-card"> <img src="assets/images/instructor.svg" alt="Instructor">
+                                    <div class="info-card">
+                                        <div class="card-title count-digit">300</div>
+                                        <div class="card-info">Instructor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="counter-card"> <img src="assets/images/video.svg" alt="Video">
+                                    <div class="info-card">
+                                        <div class="card-title count-digit">10000</div><span>+</span>
+                                        <div class="card-info">Video</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="counter-card"> <img src="assets/images/student.svg" alt="Student">
+                                    <div class="info-card">
+                                        <div class="card-title count-digit">20000</div><span>+</span>
+                                        <div class="card-info">Student</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="counter-card"> <img src="assets/images/users.svg" alt="User">
+                                    <div class="info-card">
+                                        <div class="card-title count-digit">100000</div><span>+</span>
+                                        <div class="card-info">User’s</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-center"> <img src="assets/images/girl.png" alt="Girl"> </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section testimonial-section">
+            <div class="container">
+                <div class="title-block">
+                    <h2>Student <span class="text-line">Feedback</span></h2>
+                    <div class="info-content">Various versions have evolved over the years, sometimes by accident,</div>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="splide splide--slide testimonial-slide">
+                            <div class="splide__track splide__track--slide">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="client-block">
+                                            <div class="user-block">
+                                                <div class="user-img"> <img src="assets/images/jenny-wilson.png" alt="jenny Wilson"> </div>
+                                                <div class="user-info">
+                                                    <div class="user-name">Jenny Wilson</div>
+                                                    <div class="user-meta">UI-UX Designer</div>
+                                                </div>
+                                            </div>
+                                            <div class="client-review">
+                                                <div class="sort-info">
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.</p>
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="client-block">
+                                            <div class="user-block">
+                                                <div class="user-img"> <img src="assets/images/guy-hawkins.png" alt="Guy Hawkins"> </div>
+                                                <div class="user-info">
+                                                    <div class="user-name">Guy Hawkins</div>
+                                                    <div class="user-meta">UI-UX Designer</div>
+                                                </div>
+                                            </div>
+                                            <div class="client-review">
+                                                <div class="sort-info">
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.</p>
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="client-block">
+                                            <div class="user-block">
+                                                <div class="user-img"> <img src="assets/images/jenny-wilson.png" alt="jenny Wilson"> </div>
+                                                <div class="user-info">
+                                                    <div class="user-name">Jenny Wilson</div>
+                                                    <div class="user-meta">UI-UX Designer</div>
+                                                </div>
+                                            </div>
+                                            <div class="client-review">
+                                                <div class="sort-info">
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.</p>
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="client-block">
+                                            <div class="user-block">
+                                                <div class="user-img"> <img src="assets/images/guy-hawkins.png" alt="Guy Hawkins"> </div>
+                                                <div class="user-info">
+                                                    <div class="user-name">Guy Hawkins</div>
+                                                    <div class="user-meta">UI-UX Designer</div>
+                                                </div>
+                                            </div>
+                                            <div class="client-review">
+                                                <div class="sort-info">
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.</p>
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="client-block">
+                                            <div class="user-block">
+                                                <div class="user-img"> <img src="assets/images/jenny-wilson.png" alt="jenny Wilson"> </div>
+                                                <div class="user-info">
+                                                    <div class="user-name">Jenny Wilson</div>
+                                                    <div class="user-meta">UI-UX Designer</div>
+                                                </div>
+                                            </div>
+                                            <div class="client-review">
+                                                <div class="sort-info">
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.</p>
+                                                    <p>Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section image-content-section bg-green-color">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="image-block"> <img src="assets/images/team-work.png" alt="Team Work">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="title-block"> 
+                            <div class="main-heading">
+                                <h2>Join <span class="theme-color">World's largest</span> learning platform today</h2>
+                            </div>
+                            <div class="info-content">Start learning by registering for free</div>
+                        </div>
+                        <div class="action-block">
+                            <a href="#" class="btn btn-primary btn-large">Sign up for Free</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="footer-logo-block">
+                            <a href="#" class="footer-logo">
+                                <img src="assets/images/edex.svg" alt="eDex">
+                            </a>
+                            <div class="contact-block">
+                                <div class="footer-title">Contact Us</div>
+                                <div class="footer-location-block">
+                                    <a href="tel:+123400123">Call: +123 400 123</a>
+                                    <div class="info-content">Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.</div>
+                                    <a href="mailto:example@mail.com" class="footer-email" target="_blank">Email: example@mail.com</a>
+                                </div>
+                            </div>
+                            
+                            <ul class="social-media-icons">
+                                <li><a href="https://www.facebook.com/" target="_blank"><em class="icons icon-facebook"></em></a></li>
+                                <li><a href="https://www.dribbble.com/" target="_blank"><em class="icons icon-dribble"></em></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><em class="icons icon-linkedin"></em></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><em class="icons icon-instagram"></em></a></li>
+                                <li><a href="https://www.behance.com/" target="_blank"><em class="icons icon-behance"></em></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 col-xl-2">
+                        <div class="footer-title">Explore</div>
+                        <ul id="menu-footer-menu" class="footer-link">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-4 col-xl-3">
+                        <div class="footer-title">Category</div>
+                        <ul id="menu-footer-menu" class="footer-link">
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Music</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-title">Subscribe</div>
+                        <div class="info-content">Lorem Ipsum has been them an industry printer took a galley make book.</div>
+                        <div class="action-block"> 
+                            <form> 
+                                <input type="email" id="email" placeholder="Email here" class="form-control mail-block"> 
+                                <button class="btn btn-primary btn-large" type="submit">Subscribe Now</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
