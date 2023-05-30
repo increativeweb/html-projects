@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta name="theme-color" content="#185CFF">
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name='robots' content='noindex, nofollow' />
+        <title>Ensome Services</title>
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="apple-mobile-web-app-title" content="Ensome">
+        <link rel='stylesheet' href='assets/css/main.css' type='text/css' media='all' />
+        <meta name="application-name" content="Ensome">
+        <meta name="msapplication-TileColor" content="#185CFF">
+        <meta name="theme-color" content="#185CFF">
+    </head>
+    <body>
+    <div class="container">
+        <div class="hubspot-form">
+            <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+            hbspt.forms.create({
+                region: "eu1",
+                portalId: "26816375",
+                formId: "1530893b-799a-4e6c-8015-62b3e39e53d2"
+            });
+
+            setTimeout(() => {
+                var list= '';
+                var list =$('#subject-1530893b-799a-4e6c-8015-62b3e39e53d2');
+                var options = list.find('option');
+                options.each(function(index, option) {
+                    var listVal = $(option).val();
+                    console.log(listVal, '...');
+                    if(listVal != '' || listVal != undefined){
+                        list += `<li data-list="${listVal}" onClick="changeMain('${listVal}');">${listVal}</li>`
+                    }
+                });
+                list = `<ul class="select-dropdown">${list}</ul>`;
+                var finalList = list.replace('[object Object]', '');
+                $('#subject-1530893b-799a-4e6c-8015-62b3e39e53d2').after(finalList);
+            }, 500)
+            function changeMain(val){
+                var list =$('#subject-1530893b-799a-4e6c-8015-62b3e39e53d2');
+                var options = list.find('option');
+                options.each(function(index, option) {
+                    var listVal = $(option).val();
+                    console.log(listVal, '...');
+                    if(listVal == val){
+                        $(this).attr('selected', true).siblings('selected', false);
+                    }
+                });
+            }
+            </script>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='assets/js/jquery.min.js'></script>
+    <script type='text/javascript' src='assets/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='assets/js/splide.min.js'></script>
+    <script type='text/javascript' src='assets/js/main.js'></script>
+</body>
+</html>
